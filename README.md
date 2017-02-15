@@ -5,7 +5,7 @@
 
 2) Install and start redis from https://redis.io/download
 
-3) Run console and make command
+3) Run console and make commands
 ```
 git clone https://github.com/iostrovok/NUVI.git
 cd ./NUVI/
