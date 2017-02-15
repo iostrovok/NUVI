@@ -52,13 +52,13 @@ func (this *Client) Put(item string) (bool, error) {
 
 // check downloaded file
 func (this *Client) CheckFile(val string) (bool, error) {
-	val = fmt.Sprintf("%x", md5.Sum([]byte(val)))
+	// val = fmt.Sprintf("%x", md5.Sum([]byte(val)))
 	return this.HExists(this.files, val)
 }
 
 // set downloaded file
 func (this *Client) AddFile(val string) error {
-	val = fmt.Sprintf("%x", md5.Sum([]byte(val)))
+	// val = fmt.Sprintf("%x", md5.Sum([]byte(val)))
 	return this.HSet(this.files, val)
 }
 
